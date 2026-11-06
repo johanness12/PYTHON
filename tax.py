@@ -1,4 +1,2 @@
-inp = 
-price = float(inp)
-output = round(price / 1.24, 2)
-print("Toote hind ilma käibemaksuta on:", output, 'eurot')
+outp = round(float(input('Sisesta toote hind koos käibemaksuga (eurodes): ')) / 1.24, 2)
+print('Toote hind ilma käibemaksuta on', outp, 'eurot')
