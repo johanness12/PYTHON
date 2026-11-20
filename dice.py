@@ -1,3 +1,6 @@
+from random import randint
+
+
 DICE = [
     [
         '+-------+',
@@ -44,3 +47,16 @@ DICE = [
 ]
 
 print(DICE)
+
+a = 0
+b = 0
+
+while a == 0 or b ==0:
+    a=randint(1,6)
+    b=randint(1,6)
+
+for i in range(5):
+    print(DICE[a-1][i] + ' ' + DICE[b-1][i])
+    if(i==2):
+        print(' = ' + str(a+b), end=' ')
+        print()
